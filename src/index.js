@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Hello from './Hello';
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<h1>Hello World</h1>, document.getElementById('root'));
