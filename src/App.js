@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardsList from './CardList';
 import SearchBox from './SearchBox';
+import Scroll from './Scroll';
 import './App.css';
 
 class App extends Component {
@@ -40,7 +41,9 @@ class App extends Component {
         <div className='tc'>
           <h1 className='f1'>RoboFriends</h1>
           <SearchBox searchChange={this.onSearchChange} />
-          <CardsList robots={filteredRobots} />
+          <Scroll>
+            <CardsList robots={filteredRobots} />
+          </Scroll>
         </div>
       );
     }
